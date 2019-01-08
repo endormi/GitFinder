@@ -1,0 +1,15 @@
+{
+  "name": "GitFinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node-sass sass/style.scss css/style.css -w"
+  },
+  "author": "Endormi",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "node-sass": "^4.5.3"
+  }
+}

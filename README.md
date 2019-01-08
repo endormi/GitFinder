@@ -31,13 +31,13 @@ Next thing is to open your terminal of choice and install modules
 npm install
 ```
 
-After the modules are installed, you must get the server up and running (-g stands for globally)
+After the modules are installed, you must get the server up and running (-g stands for global)
 
 ```
 npm install live-server -g
 ```
 
-To open up the server 
+To run the server 
 
 ```
 live-server
@@ -83,6 +83,21 @@ const showData = () => {
         urlContainer.innerHTML = `URL: <span class="main__profile-value">${res.data.html_url}</span>`;
     })
 };
+```
+
+A small part of GitHub's JSON code as an example
+
+``` 
+{
+  "login": "endormi",
+  "url": "https://api.github.com/users/endormi",
+  "html_url": "https://github.com/endormi",
+  "followers_url": "https://api.github.com/users/endormi/followers",
+  "following_url": "https://api.github.com/users/endormi/following{/other_user}",
+  "gists_url": "https://api.github.com/users/endormi/gists{/gist_id}",
+  "repos_url": "https://api.github.com/users/endormi/repos",
+  "name": "",
+}
 ```
 
 ## License
