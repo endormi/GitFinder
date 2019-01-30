@@ -23,12 +23,17 @@ const client_id = "your_token";
 const client_secret = "your_token";
 ```
 
-> More detailed explanation of the application view:
+More detailed explanation of the application url:
 
 Homepage URL | User authorization callback URL  | Webhook URL 
 ------------- | ------------- | ------------- 
 http://127.0.0.1:8080 | http://127.0.0.1:8080 | http://127.0.0.1:8080
 
+**OAuth credentials**
+
+Client ID | Client secret 
+------------- | ------------- 
+your_token (everyone has a different one) | your_token
 
 ### Install dependencies
 
