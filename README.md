@@ -23,7 +23,14 @@ const client_id = "your_token";
 const client_secret = "your_token";
 ```
 
-### Commands
+> More detailed explanation of the application view:
+
+Homepage URL | User authorization callback URL  | Webhook URL 
+------------- | ------------- | ------------- 
+http://127.0.0.1:8080 | http://127.0.0.1:8080 | http://127.0.0.1:8080
+
+
+### Install dependencies
 
 Next thing is to open your terminal of choice and install modules
 
