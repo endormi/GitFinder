@@ -33,7 +33,7 @@ http://127.0.0.1:8080 | http://127.0.0.1:8080 | http://127.0.0.1:8080
 
 Client ID | Client secret 
 ------------- | ------------- 
-your_token (everyone has a different one) | your_token
+your_token | your_token
 
 ### Install dependencies
 

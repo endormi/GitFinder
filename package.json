@@ -1,7 +1,7 @@
 {
   "name": "GitFinder",
   "version": "1.0.0",
-  "description": "",
+  "description": "Find and fetch user information using GitHub's API",
   "main": "app.js",
   "scripts": {
     "start": "node-sass sass/style.scss css/style.css -w"

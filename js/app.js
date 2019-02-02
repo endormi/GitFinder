@@ -27,7 +27,7 @@ const showData = () => {
         nameContainer.innerHTML = `Name: <span class="main__profile-value">${res.data.name}</span>`;
         unContainer.innerHTML = `Username: <span class="main__profile-value">${res.data.login}</span>`;
         reposContainer.innerHTML = `Repositories: <span class="main__profile-value">${res.data.public_repos}</span>`;
-        urlContainer.innerHTML = `URL: <span class="main__profile-value">${res.data.html_url}</span>`;
+        urlContainer.innerHTML = `URL: <a href="${res.data.html_url}"><span class="main__profile-value">${res.data.html_url}</span></a>`;
     })
 };
 
