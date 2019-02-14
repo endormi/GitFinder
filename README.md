@@ -63,6 +63,20 @@ npm start
 
 And then apply your preferred edits.
 
+#### eslint
+
+[ESLint](https://www.npmjs.com/package/eslint) is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
+
+```
+npm install -g eslint
+```
+
+Configuration file
+
+```
+eslint --init
+```
+
 ### Using GitHub's API
 
 To use GitHub's API, you obviously need to fetch the API from GitHub. (Url is continuous)

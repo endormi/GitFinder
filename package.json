@@ -10,6 +10,7 @@
   "license": "MIT",
   "devDependencies": {
     "bootstrap": "^3.3.7",
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.5.3",
+    "eslint": "^5.13.0"
   }
 }
