@@ -89,7 +89,7 @@ const fetchUsers = async (user) => {
 
 > ${user} links (user) from const fetchUsers
 
-While you have the api_call, it doesn't know what file it is.
+While you have the api_call, it doesn't know what type of file it is.
 
 ```
 const data = await api_call.json();
