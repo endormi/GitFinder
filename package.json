@@ -6,9 +6,9 @@
   "scripts": {
     "start": "node-sass sass/style.scss css/style.css -w"
   },
-  "author": "Endormi",
+  "author": "Endormi (https://github.com/endormi)",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "node-sass": "^4.5.3",
     "eslint": "^5.13.0"
   }

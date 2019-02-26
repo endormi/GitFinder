@@ -9,7 +9,7 @@ const urlContainer = document.querySelector(".main__profile-url");
 const client_id = "Iv1.ca05a9878764193f";
 const client_secret = "d8dd5d4d24c03db27fd3e1911fbfcc8d1a2b0b60";
 
-// async await (AJAX on steroids) makes http requests
+// async await makes the http requests
 const fetchUsers = async (user) => {
     const api_call = await fetch(`https://api.github.com/users/${user}
     ?client_id=${client_id}&client_secret=${client_secret}`); // ES6 template strings
@@ -21,7 +21,6 @@ const fetchUsers = async (user) => {
 
 // Fetch data
 const showData = () => {
-    // .then is a promise and res is response
     fetchUsers(inputValue.value).then((res) => {
         // ${res.data.} then GitHub's API property
         nameContainer.innerHTML = `Name: <span class="main__profile-value">${res.data.name}</span>`;
