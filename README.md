@@ -2,8 +2,6 @@
 
 > Find and Fetch user information with GitHub's API using plain javascript, only by entering a username.
 
-In case anyone wants to try this out, I have included [starter files](https://drive.google.com/drive/u/1/folders/1PbUk0TxQEOiw9m5dJQeg6IoRfXkm7moD).
-
 ## Running the Project Locally
 
 Clone the repository to your local machine:
@@ -16,24 +14,18 @@ git clone https://github.com/endormi/GitFinder.git
 
 First you must create an [application](https://github.com/settings/apps), all you need to worry about for now is the url's. I personally used **http://127.0.0.1:8080** for the site and webhook url (it's up to you).
 
-Once the application is created, you are provided with client id and client secret tokens which you then need to apply to your app.js file
-
-```
-const client_id = "your_token";
-const client_secret = "your_token";
-```
-
 More detailed explanation of the application url:
 
 Homepage URL | User authorization callback URL  | Webhook URL 
 ------------- | ------------- | ------------- 
 http://127.0.0.1:8080 | http://127.0.0.1:8080 | http://127.0.0.1:8080
 
-**OAuth credentials**
+Once the application is created, you are provided with client id and client secret tokens which you then need to apply to your app.js file
 
-Client ID | Client secret 
-------------- | ------------- 
-your_token | your_token
+```
+const client_id = "your_token";
+const client_secret = "your_token";
+```
 
 ### Install dependencies
 
@@ -43,7 +35,7 @@ Next thing is to open your terminal of choice and install modules
 npm install
 ```
 
-After the modules are installed, you must get the server up and running (-g stands for global)
+After the modules are installed, you must get the server up and running (`-g` stands for global)
 
 ```
 npm install live-server -g
