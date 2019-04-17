@@ -1,4 +1,4 @@
-*.css linguist-language=JavaScript
+*.html linguist-language=JavaScript
 
 # THIS IS ONLY FOR THE gitattributes REPOSITORY.
 # Handle line endings automatically for files detected as text
