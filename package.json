@@ -3,13 +3,9 @@
   "version": "1.0.0",
   "description": "Find and fetch user information using GitHub's API",
   "main": "app.js",
-  "scripts": {
-    "start": "node-sass sass/style.scss css/style.css -w"
-  },
   "author": "Endormi (https://github.com/endormi)",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^4.5.3",
     "eslint": "^5.13.0"
   }
 }
