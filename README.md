@@ -106,6 +106,8 @@ A small part of GitHub's JSON code as an example
 }
 ```
 
+**ONLY Public Repositories**
+
 ## License
 
 The source code is released under the [MIT License](https://github.com/endormi/GitFinder/blob/master/LICENSE).

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Dokdo');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Monda');
+@import url('https://fonts.googleapis.com/css?family=VT323');
+/* 
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Dokdo', cursive;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Abel', sans-serif;
+  font-family: 'Exo 2', sans-serif;
+  font-family: 'Crimson Text', serif;
+  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Monda', sans-serif;
+  font-family: 'VT323', monospace;
+    Python's font
+  font-family: SourceSansProRegular,Arial,sans-serif;
+*/
+
+* {
+    font-family: SourceSansProRegular,Arial,sans-serif;
+}
