@@ -33,8 +33,17 @@ a:link {
   padding: 3px;
 }
 
+b {
+  color: rgb(255, 217, 67);
+}
+
+.btn-secondary {
+  color: #000;
+  background-color: rgb(255, 217, 67);
+}
+
 .main__profile-value {
-  color: #b3bac0;
+  color: rgb(255, 217, 67);
 }
 
 @media (max-width: 767px) {
