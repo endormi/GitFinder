@@ -49,14 +49,6 @@ To run the server
 live-server
 ```
 
-If you wish to edit the styling of the page
-
-```
-npm start
-```
-
-And then apply your preferred edits.
-
 ### Using GitHub's API
 
 To use GitHub's API, you obviously need to fetch the API from GitHub. (Url is continuous)
