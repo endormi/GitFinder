@@ -31,13 +31,13 @@ const client_secret = "your_token";
 
 ### Install dependencies
 
-Next thing is to open your terminal of choice and install modules
+Next thing is to open your terminal of choice and install dependencies
 
 ```
 npm install
 ```
 
-After the modules are installed, you must get the server up and running (`-g` stands for global)
+After the dependencies are installed, you must get the server up and running (`-g` stands for global)
 
 ```
 npm install live-server -g
@@ -51,7 +51,7 @@ live-server
 
 ### Using GitHub's API
 
-To use GitHub's API, you obviously need to fetch the API from GitHub. (Url is continuous)
+To use GitHub's API, you obviously need to fetch the API from GitHub. (URL is continuous)
 
 ```
 const fetchUsers = async (user) => {
@@ -60,28 +60,6 @@ const fetchUsers = async (user) => {
 ```
 
 > ${user} links (user) from const fetchUsers
-
-While you have the api_call, it doesn't know what type of file it is.
-
-```
-const data = await api_call.json();
-    return { data }
-```
-
-> JSON is a syntax for storing and exchanging data.
-
-Span class is for styling purposes. To show data on the website.
-
-```
-const showData = () => {
-    fetchUsers(inputValue.value).then((res) => {
-        nameContainer.innerHTML = `Name: <span class="main__profile-value">${res.data.name}</span>`;
-        unContainer.innerHTML = `Username: <span class="main__profile-value">${res.data.login}</span>`;
-        reposContainer.innerHTML = `Repositories: <span class="main__profile-value">${res.data.public_repos}</span>`;
-        urlContainer.innerHTML = `URL: <span class="main__profile-value">${res.data.html_url}</span>`;
-    })
-};
-```
 
 A small part of GitHub's JSON code as an example
 

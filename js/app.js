@@ -1,9 +1,11 @@
 const inputValue = document.querySelector("#search");
 const searchButton = document.querySelector(".searchButton");
-const nameContainer = document.querySelector(".main__profile-name");
-const unContainer = document.querySelector(".main__profile-username");
-const reposContainer = document.querySelector(".main__profile-repos");
-const urlContainer = document.querySelector(".main__profile-url");
+const nameContainer = document.querySelector(".profile_name");
+const unContainer = document.querySelector(".profile_username");
+const reposContainer = document.querySelector(".profile_repos");
+const urlContainer = document.querySelector(".profile_url");
+const followerContainer = document.querySelector(".profile_followers")
+const followingContainer = document.querySelector(".profile_following")
 
 // Using the application's tokens
 const client_id = "Iv1.ca05a9878764193f";
@@ -22,11 +24,13 @@ const fetchUsers = async (user) => {
 // Fetch data
 const showData = () => {
     fetchUsers(inputValue.value).then((res) => {
-        // ${res.data.} then GitHub's API property
-        nameContainer.innerHTML = `Name: <span class="main__profile-value">${res.data.name}</span>`;
-        unContainer.innerHTML = `Username: <span class="main__profile-value">${res.data.login}</span>`;
-        reposContainer.innerHTML = `Repositories: <span class="main__profile-value">${res.data.public_repos}</span>`;
-        urlContainer.innerHTML = `URL: <a href="${res.data.html_url}"><span class="main__profile-value">${res.data.html_url}</span></a>`;
+        // ${res.data...} then GitHub's API property
+        nameContainer.innerHTML = `Name: <span class="profile">${res.data.name}</span>`;
+        unContainer.innerHTML = `Username: <span class="profile">${res.data.login}</span>`;
+        reposContainer.innerHTML = `Repositories: <span class="profile">${res.data.public_repos}</span>`;
+        urlContainer.innerHTML = `URL: <a href="${res.data.html_url}"><span class="profile">${res.data.html_url}</span></a>`;
+        followerContainer.innerHTML = `Followers: <span class="profile">${res.data.followers}</span>`;
+        followingContainer.innerHTML = `Following: <span class="profile">${res.data.following}</span>`;
     })
 };
 

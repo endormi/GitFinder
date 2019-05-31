@@ -2,7 +2,7 @@
   "name": "GitFinder",
   "version": "1.0.0",
   "description": "Find and fetch user information using GitHub's API",
-  "main": "app.js",
+  "main": "js/app.js",
   "author": "Endormi (https://github.com/endormi)",
   "license": "MIT",
   "dependencies": {
