@@ -31,13 +31,7 @@ const client_secret = "your_token";
 
 ### Install dependencies
 
-Next thing is to open your terminal of choice and install dependencies
-
-```
-npm install
-```
-
-After the dependencies are installed, you must get the server up and running (`-g` stands for global)
+Get the server up and running (`-g` stands for global)
 
 ```
 npm install live-server -g
