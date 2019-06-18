@@ -18,8 +18,8 @@ First you must create an [application](https://github.com/settings/apps), all yo
 
 More detailed explanation of the application url:
 
-Homepage URL | User authorization callback URL  | Webhook URL 
-------------- | ------------- | ------------- 
+Homepage URL | User authorization callback URL  | Webhook URL
+------------- | ------------- | -------------
 http://127.0.0.1:8080 | http://127.0.0.1:8080 | http://127.0.0.1:8080
 
 Once the application is created, you are provided with client id and client secret tokens which you then need to apply to your app.js file
@@ -29,7 +29,7 @@ const client_id = "your_token";
 const client_secret = "your_token";
 ```
 
-### Install dependencies
+### Install live-server
 
 Get the server up and running (`-g` stands for global)
 
@@ -37,7 +37,7 @@ Get the server up and running (`-g` stands for global)
 npm install live-server -g
 ```
 
-To run the server 
+To run the server
 
 ```
 live-server
@@ -57,7 +57,7 @@ const fetchUsers = async (user) => {
 
 A small part of GitHub's JSON code as an example
 
-``` 
+```
 {
   "login": "endormi",
   "url": "https://api.github.com/users/endormi",
