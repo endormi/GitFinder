@@ -24,7 +24,7 @@ http://127.0.0.1:8080 | http://127.0.0.1:8080 | http://127.0.0.1:8080
 
 Once the application is created, you are provided with client id and client secret tokens which you then need to apply to your app.js file
 
-```
+```javascript
 const client_id = "your_token";
 const client_secret = "your_token";
 ```
@@ -47,7 +47,7 @@ live-server
 
 To use GitHub's API, you obviously need to fetch the API from GitHub. (URL is continuous)
 
-```
+```javascript
 const fetchUsers = async (user) => {
     const api_call = await fetch(`https://api.github.com/users/${user}?client_id=$
     {client_id}&client_secret=${client_secret}`);
@@ -55,7 +55,7 @@ const fetchUsers = async (user) => {
 
 A small part of GitHub's JSON code as an example
 
-```
+```javascript
 {
   "login": "endormi",
   "url": "https://api.github.com/users/endormi",
