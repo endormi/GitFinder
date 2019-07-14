@@ -8,7 +8,7 @@
 
 Clone the repository to your local machine:
 
-```
+```sh
 git clone https://github.com/endormi/GitFinder.git
 ```
 
@@ -29,21 +29,21 @@ const client_id = "your_token";
 const client_secret = "your_token";
 ```
 
-### Install live-server
+#### Install live-server
 
 Get the server up and running (`-g` stands for global)
 
-```
+```sh
 npm install live-server -g
 ```
 
 To run the server
 
-```
+```sh
 live-server
 ```
 
-### Using GitHub's API
+#### Using GitHub's API
 
 To use GitHub's API, you obviously need to fetch the API from GitHub. (URL is continuous)
 
@@ -52,8 +52,6 @@ const fetchUsers = async (user) => {
     const api_call = await fetch(`https://api.github.com/users/${user}?client_id=$
     {client_id}&client_secret=${client_secret}`);
 ```
-
-> ${user} links (user) from const fetchUsers
 
 A small part of GitHub's JSON code as an example
 
