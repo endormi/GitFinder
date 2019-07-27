@@ -20,7 +20,7 @@ Homepage URL | User authorization callback URL  | Webhook URL
 ------------- | ------------- | -------------
 http://127.0.0.1:8080 | http://127.0.0.1:8080 | http://127.0.0.1:8080
 
-Once the application is created, you are provided with client id and client secret tokens which you then need to apply to your app.js file
+Once the application is created, you are provided with `client id` and `client secret` token which you then need to apply to your app.js file
 
 ```javascript
 const client_id = "your_token";
@@ -66,7 +66,7 @@ A small part of GitHub's JSON code as an example
 }
 ```
 
-**ONLY Public Repositories**
+**ONLY For Public Repositories**
 
 ## License
 

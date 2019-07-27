@@ -24,7 +24,6 @@ const fetchUsers = async (user) => {
 // Fetch data
 const showData = () => {
     fetchUsers(inputValue.value).then((res) => {
-        // ${res.data...} then GitHub's API property
         nameContainer.innerHTML = `Name: <span class="profile">${res.data.name}</span>`;
         unContainer.innerHTML = `Username: <span class="profile">${res.data.login}</span>`;
         reposContainer.innerHTML = `Repositories: <span class="profile">${res.data.public_repos}</span>`;
