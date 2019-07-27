@@ -1,7 +1,5 @@
 # GitFinder
 
-[Website](http://endormi.io/GitFinder/)
-
 > Find and Fetch user information with GitHub's API using plain javascript, only by entering a username.
 
 ## Running the Project Locally
