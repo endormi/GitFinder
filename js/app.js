@@ -1,7 +1,7 @@
 const inputValue = document.querySelector("#search");
 const searchButton = document.querySelector(".searchButton");
 const nameContainer = document.querySelector(".profile_name");
-const unContainer = document.querySelector(".profile_username");
+const userContainer = document.querySelector(".profile_username");
 const reposContainer = document.querySelector(".profile_repos");
 const urlContainer = document.querySelector(".profile_url");
 const followerContainer = document.querySelector(".profile_followers")
@@ -25,7 +25,7 @@ const fetchUsers = async (user) => {
 const showData = () => {
     fetchUsers(inputValue.value).then((res) => {
         nameContainer.innerHTML = `Name: <span class="profile">${res.data.name}</span>`;
-        unContainer.innerHTML = `Username: <span class="profile">${res.data.login}</span>`;
+        userContainer.innerHTML = `Username: <span class="profile">${res.data.login}</span>`;
         reposContainer.innerHTML = `Repositories: <span class="profile">${res.data.public_repos}</span>`;
         urlContainer.innerHTML = `URL: <a href="${res.data.html_url}"><span class="profile">${res.data.html_url}</span></a>`;
         followerContainer.innerHTML = `Followers: <span class="profile">${res.data.followers}</span>`;
