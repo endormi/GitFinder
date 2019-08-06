@@ -24,13 +24,14 @@ const fetchUser = async (user) => {
 // Fetch data
 const showData = () => {
     fetchUser(inputValue.value).then((res) => {
-        nameContainer.innerHTML = `Name: <span class="profile">${res.data.name}</span>`;
-        userContainer.innerHTML = `Username: <span class="profile">${res.data.login}</span>`;
-        reposContainer.innerHTML = `Repositories: <span class="profile">${res.data.public_repos}</span>`;
-        urlContainer.innerHTML = `URL: <a href="${res.data.html_url}"><span class="profile">${res.data.html_url}</span></a>`;
-        followerContainer.innerHTML = `Followers: <span class="profile">${res.data.followers}</span>`;
-        followingContainer.innerHTML = `Following: <span class="profile">${res.data.following}</span>`;
-    })
+        const { name,login,public_repos,profile,followers,following,html_url } = res.data;
+        nameContainer.innerHTML = `Name: <span class="profile">${name}</span>`;
+        userContainer.innerHTML = `Username: <span class="profile">${login}</span>`;
+        reposContainer.innerHTML = `Repositories: <span class="profile">${public_repos}</span>`;
+        urlContainer.innerHTML = `URL: <a href="${res.data.html_url}"><span class="profile">${html_url}</span></a>`;
+        followerContainer.innerHTML = `Followers: <span class="profile">${followers}</span>`;
+        followingContainer.innerHTML = `Following: <span class="profile">${following}</span>`;
+    }).catch((err)=> throw new Error(err));
 };
 
 searchButton.addEventListener("click", () => {
