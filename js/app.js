@@ -1,5 +1,5 @@
 const inputValue = document.querySelector("#search");
-const searchButton = document.querySelector(".searchButton");
+const searchButton = document.querySelector(".btn");
 const nameContainer = document.querySelector(".profile_name");
 const userContainer = document.querySelector(".profile_username");
 const reposContainer = document.querySelector(".profile_repos");
@@ -12,7 +12,7 @@ const client_id = "Iv1.ca05a9878764193f";
 const client_secret = "d8dd5d4d24c03db27fd3e1911fbfcc8d1a2b0b60";
 
 // async await makes the http requests
-const fetchUsers = async (user) => {
+const fetchUser = async (user) => {
     const api_call = await fetch(`https://api.github.com/users/${user}
     ?client_id=${client_id}&client_secret=${client_secret}`); // ES6 template strings
 
@@ -23,7 +23,7 @@ const fetchUsers = async (user) => {
 
 // Fetch data
 const showData = () => {
-    fetchUsers(inputValue.value).then((res) => {
+    fetchUser(inputValue.value).then((res) => {
         nameContainer.innerHTML = `Name: <span class="profile">${res.data.name}</span>`;
         userContainer.innerHTML = `Username: <span class="profile">${res.data.login}</span>`;
         reposContainer.innerHTML = `Repositories: <span class="profile">${res.data.public_repos}</span>`;
