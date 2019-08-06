@@ -46,7 +46,7 @@ live-server
 To use GitHub's API, you obviously need to fetch the API from GitHub. (URL is continuous)
 
 ```javascript
-const fetchUsers = async (user) => {
+const fetchUser = async (user) => {
     const api_call = await fetch(`https://api.github.com/users/${user}?client_id=$
     {client_id}&client_secret=${client_secret}`);
 ```
@@ -62,7 +62,6 @@ A small part of GitHub's JSON code as an example
   "following_url": "https://api.github.com/users/endormi/following{/other_user}",
   "gists_url": "https://api.github.com/users/endormi/gists{/gist_id}",
   "repos_url": "https://api.github.com/users/endormi/repos",
-  "name": "",
 }
 ```
 
